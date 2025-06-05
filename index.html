@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Benvenuto nel mio sito</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emozioni Segrete</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #f8e5e0 0%, #b85c6c 100%);
+      color: #4a2c3b;
+    }
+    header {
+      position: relative;
+      height: 250px;
+      background: url('header-placeholder-contacts-v3.jpg') center center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f9f2f4cc;
+      text-shadow: 1px 1px 5px #3e202c;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 20px;
+    }
+    nav {
+      background-color: #823c4a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+    }
+    nav a {
+      color: #f8e5e0;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e3a6b0;
+    }
+    main {
+      max-width: 720px;
+      margin: 30px auto 50px;
+      background: #f9f2f4dd;
+      border-radius: 15px;
+      padding: 30px 25px;
+      box-shadow: 0 8px 20px rgba(184, 92, 108, 0.4);
+    }
+    main h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #823c4a;
+    }
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #6a4350;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: 2px solid #d69aa3;
+      border-radius: 10px;
+      resize: vertical;
+      font-family: 'Open Sans', sans-serif;
+    }
+    input:focus, textarea:focus {
+      border-color: #823c4a;
+      outline: none;
+      box-shadow: 0 0 8px #b85c6c88;
+    }
+    button {
+      background-color: #823c4a;
+      color: #f8e5e0;
+      border: none;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #b85c6c;
+    }
+    footer {
+      text-align: center;
+      color: #823c4a99;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <h1>Sito attivo su GitHub Pages!</h1>
-  <p>Funziona!</p>
+  <header>
+    Emozioni Segrete: Incontri e Racconti Intimi
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+  <main>
+    <h1>Benvenuta in Emozioni Segrete</h1>
+    <p>Un luogo elegante e discreto dove le donne possono condividere le loro storie segrete. Scopri esperienze autentiche, condividi le tue emozioni più intime e lasciati ispirare da altre donne come te.</p>
+    <h2>Iscriviti per ricevere il nostro mini corso gratuito</h2>
+    <form action="#" method="post">
+      <input type="email" name="email" placeholder="La tua email" required />
+      <button type="submit">Scarica il PDF</button>
+    </form>
+  </main>
+  <footer>
+    &copy; 2025 Emozioni Segrete. Tutti i diritti riservati.
+  </footer>
 </body>
 </html>
