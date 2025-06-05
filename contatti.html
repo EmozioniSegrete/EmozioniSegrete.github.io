@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contatti - Emozioni Segrete</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap');
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #f8e5e0 0%, #b85c6c 100%);
+      color: #4a2c3b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      position: relative;
+      height: 250px;
+      background: url('header-placeholder-contacts-v3.jpg') center center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f9f2f4cc;
+      text-shadow: 1px 1px 5px #3e202c;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 20px;
+    }
+    nav {
+      background-color: #823c4a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+    }
+    nav a {
+      color: #f8e5e0;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e3a6b0;
+    }
+    main {
+      max-width: 800px;
+      margin: 30px auto 50px;
+      background: #f9f2f4dd;
+      border-radius: 15px;
+      padding: 30px 25px;
+      box-shadow: 0 8px 20px rgba(184, 92, 108, 0.4);
+      flex-grow: 1;
+    }
+    main h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #823c4a;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 12px 15px;
+      font-size: 1rem;
+      border: 2px solid #d69aa3;
+      border-radius: 10px;
+      font-family: 'Open Sans', sans-serif;
+      resize: vertical;
+      color: #4a2c3b;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: #999;
+    }
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: white;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='%234a2c3b' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 16px;
+      color: #999;
+    }
+    select option[value=""] {
+      color: #999;
+    }
+    select:focus {
+      border-color: #823c4a;
+      outline: none;
+      box-shadow: 0 0 8px #b85c6c88;
+      color: #4a2c3b;
+    }
+    select:not(:focus):valid {
+      color: #4a2c3b;
+    }
+    select:invalid {
+      color: #999;
+    }
+    input:focus, textarea:focus {
+      border-color: #823c4a;
+      outline: none;
+      box-shadow: 0 0 8px #b85c6c88;
+    }
+    button {
+      background-color: #823c4a;
+      color: #f8e5e0;
+      border: none;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #b85c6c;
+    }
+    footer {
+      text-align: center;
+      color: #823c4a99;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Contattaci per Condividere o per Info
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+  <main>
+    <h1>Modulo Contatti</h1>
+    <form action="https://formspree.io/f/mrbkbbel" method="POST">
+      <!-- Redirect personalizzato opzionale -->
+      <!-- <input type="hidden" name="_redirect" value="https://tuosito.it/grazie.html"> -->
+
+      <label for="name">Nome:</label>
+      <input type="text" name="name" placeholder="Scrivi il tuo nome" required>
+
+      <label for="age">Età:</label>  
+      <input type="number" name="eta" placeholder="Scrivi la tua età" min="18" max="99" required>
+
+      <label for="province">Provincia:</label>  
+      <input type="text" name="provincia" placeholder="Scrivi la provincia dove vivi" required>
+
+      <label for="email">Indirizzo e-mail:</label>  
+      <input type="email" name="email" placeholder="Scrivi la tua e-mail" required>
+
+      <label for="email_publishing">Vuoi che la tua e-mail venga pubblicata sul blog:</label>
+      <select name="email_publishing" required>
+        <option value="">-- Seleziona --</option>
+        <option value="si">Si</option>
+        <option value="no">No</option>
+      </select>    
+
+      <label for="esperienza">Tipo di esperienza desiderata:</label>
+      <select name="esperienza" required>
+        <option value="">-- Seleziona --</option>
+        <option value="nessuna">Nessuna</option>
+        <option value="conoscenza romantica">Conoscenza romantica</option>
+        <option value="avventura occasionale">Avventura occasionale</option>
+        <option value="relazione trasgressiva">Relazione trasgressiva</option>
+        <option value="altro">Altro</option>
+      </select>    
+
+      <label for="titolo_racconto">Titolo del racconto (blog):</label>  
+      <input type="text" name="titolo_racconto" placeholder="Scrivi il titolo del racconto" required>
+
+      <label for="message">Messaggio:</label>
+      <textarea name="message" placeholder="Scrivi il tuo messaggio" rows="5" required></textarea>
+
+      <label for="publication_story">Vuoi che il tuo racconto venga pubblicato sul blog:</label>
+      <select name="publication_story" required>
+        <option value="">-- Seleziona --</option>
+        <option value="si">Si</option>
+        <option value="no">No</option>
+      </select>    
+
+      &ensp;
+      <button type="submit">Invia Messaggio</button>
+      <br>
+    </form>
+  </main>
+  <footer>
+    &copy; 2025 Emozioni Segrete. Tutti i diritti riservati.
+  </footer>
+
+  <!-- SCRIPT CAPTCHA Formspree -->
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+</body>
+</html>
