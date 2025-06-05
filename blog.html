@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Emozioni Segrete</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #f8e5e0 0%, #b85c6c 100%);
+      color: #4a2c3b;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      position: relative;
+      height: 250px;
+      background: url('header-placeholder-contacts-v3.jpg') center center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f9f2f4cc;
+      text-shadow: 1px 1px 5px #3e202c;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 20px;
+    }
+    nav {
+      background-color: #823c4a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+    }
+    nav a {
+      color: #f8e5e0;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #e3a6b0;
+    }
+    main {
+      max-width: 720px;
+      margin: 30px auto 50px;
+      background: #f9f2f4dd;
+      border-radius: 15px;
+      padding: 30px 25px;
+      box-shadow: 0 8px 20px rgba(184, 92, 108, 0.4);
+      flex-grow: 1;
+    }
+    main h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #823c4a;
+    }
+    main p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      color: #6a4350;
+    }
+    .story {
+      margin-bottom: 20px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d69aa3aa;
+    }
+    .story h3 {
+      font-family: 'Playfair Display', serif;
+      color: #823c4a;
+      margin-bottom: 8px;
+    }
+    .story p {
+      font-size: 1rem;
+      color: #5a3a45;
+      line-height: 1.5;
+    }
+    .submit-instructions {
+      background: #ffe8f0;
+      padding: 15px;
+      border-radius: 10px;
+      color: #823c4a;
+      font-weight: 600;
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      margin-top: 25px;
+    }
+    footer {
+      text-align: center;
+      color: #823c4a99;
+      padding: 25px 10px;
+      font-size: 0.9rem;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Racconti Intimi di Emozioni Segrete
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+  <main>
+    <h1>Diario di Emozioni e Passioni</h1>
+    <div class="story">
+      <h3>Confessione di una donna</h3>
+      <p>Qui potresti leggere storie vere, racconti intimi e coinvolgenti scritti da donne come te, che vogliono condividere esperienze di incontri e passioni vere.</p>
+    </div>
+    <div class="story">
+      <h3>Esperienze di incontri reali</h3>
+      <p>Racconti sinceri che parlano di desideri, paure, scoperte e momenti di piacere autentico.</p>
+    </div>
+    <div class="submit-instructions">
+      <p>Per condividere la tua storia, inviaci un messaggio tramite la pagina <a href="contatti.html">Contatti</a>.</p>
+      <p>In futuro potremo implementare un sistema di invio diretto dal blog.</p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Emozioni Segrete. Tutti i diritti riservati.
+  </footer>
+</body>
+</html>
